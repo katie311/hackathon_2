@@ -22,8 +22,8 @@ class Api::VideosController < ApplicationController
   def show
     video = Video.find(params[:id])
     user = User.find(video.user_id)
-
-    render json: {user: user, video: video}
+    comments = video.comments
+    render json: {user: user, video: video, comments: comments}
   end
 
   def destroy
