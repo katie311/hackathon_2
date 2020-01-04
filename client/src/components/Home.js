@@ -10,27 +10,27 @@ const Home = () => (
       <Grid align="left" columns={2}>
         <Grid.Column>
           <Image style={one} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-          <h3>meth head</h3>
+          <h3>GINYU FORCE</h3>
         </Grid.Column>
         <Grid.Column>
           <Grid columns={2}>
             <div className="grid">
               <br />
               <Image style={two} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h4>meth head</h4>
+              <h4>GINYU FORCE</h4>
               <br />
               <Image style={two} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h4>meth head</h4>
+              <h4>GINYU FORCE</h4>
               <br />
             </div>
             <br />
             <div className="grid">
               <br />
               <Image style={two} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h4>meth head</h4>
+              <h4>GINYU FORCE</h4>
               <br />
               <Image style={two} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h4>meth head</h4>
+              <h4>GINYU FORCE</h4>
               <br />
             </div>
           </Grid>
@@ -43,25 +43,25 @@ const Home = () => (
           <Grid.Column>
           
               <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h3>meth head</h3>
+              <h3>GINYU FORCE</h3>
             
           </Grid.Column>
           <Grid.Column>
           
               <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h3>meth head</h3>
+              <h3>GINYU FORCE</h3>
             
           </Grid.Column>
           <Grid.Column>
           
               <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h3>meth head</h3>
+              <h3>GINYU FORCE</h3>
             
           </Grid.Column>
           <Grid.Column>
           
               <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-              <h3>meth head</h3>
+              <h3>GINYU FORCE</h3>
             
           </Grid.Column>
         </Grid>
@@ -70,25 +70,25 @@ const Home = () => (
         <Grid.Column>
         
             <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-            <h3>meth head</h3>
+            <h3>GINYU FORCE</h3>
           
         </Grid.Column>
         <Grid.Column>
         
             <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-            <h3>meth head</h3>
+            <h3>GINYU FORCE</h3>
           
         </Grid.Column>
         <Grid.Column>
         
             <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-            <h3>meth head</h3>
+            <h3>GINYU FORCE</h3>
           
         </Grid.Column>
         <Grid.Column>
         
             <Image style={four} src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
-            <h3>meth head</h3>
+            <h3>GINYU FORCE</h3>
         
         </Grid.Column>
       </Grid>
