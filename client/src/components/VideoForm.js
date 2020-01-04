@@ -28,6 +28,7 @@ class VideoForm extends React.Component {
 
     return (
       <div>
+        <br />
         <Header as="h1"> New Video </Header>
         <Form onSubmit={this.handleSubmit}>
           <Form.Group widths="equal">
