@@ -2,6 +2,8 @@
 
 class User < ActiveRecord::Base
   extend Devise::Models
+  has_many :videos
+  has_many :comments
   
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
