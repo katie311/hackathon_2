@@ -1,5 +1,6 @@
 import React from 'react'
-import { Form, Header, } from "semantic-ui-react";
+import { Form, Header, } from "semantic-ui-react"
+import axios from 'axios'
 
 class VideoForm extends React.Component {
   defaultValues = {
@@ -14,8 +15,11 @@ class VideoForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     const video = { ...this.state, }
-    //api post request here
-    this.setState({ ...this.defaultValues })
+    axios.post("/api/videos", video)
+    .then( res => {
+      this.props.history.push("/");
+    })
+   this.setState({ ...this.defaultValues })
   }
 
   handleChange = (e) => {
@@ -64,7 +68,9 @@ class VideoForm extends React.Component {
             value={description}
             onChange={this.handleChange}
           />
+        <Form.Button color="red"> Create </Form.Button>
         </Form>
+        <br />
       </div>
     )
   }
