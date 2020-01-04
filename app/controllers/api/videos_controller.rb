@@ -18,8 +18,12 @@ class Api::VideosController < ApplicationController
     render json: video
   end
 
+
   def show
-    render json: current_user.videos.find(params[:id])
+    video = Video.find(params[:id])
+    user = User.find(video.user_id)
+
+    render json: {user: user, video: video}
   end
 
   def destroy
@@ -30,6 +34,10 @@ class Api::VideosController < ApplicationController
 
   def video_params
     params.require(:video).permit(:title, :duration, :genre, :description, :trailer)
+  end
+  
+  def set_video
+    @video = Video.find(params[:id])
   end
 
 end
