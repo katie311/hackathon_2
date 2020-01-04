@@ -19,7 +19,7 @@
   )
 
   3.times do 
-    video = user.videos.create(
+    @video = user.videos.create(
       title: Faker::Space.star,
       duration: rand(60..180),
       genre: Faker::Game.genre,
@@ -30,12 +30,11 @@
 
 end
 
-Video.all do |video|
-
+Video.all.each do |video|
+  
   rand(1..3).times do
-
+    
     user = User.all.sample
-
     Comment.create(
       body: Faker::Lorem.sentence,
       user_id: user.id,
