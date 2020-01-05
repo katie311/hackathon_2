@@ -20,26 +20,34 @@ class Navbar extends React.Component {
               active={this.props.location.pathname === '/Liked'}
             />
           </Link>
-          <Button style={btn} color="red">
+          <Link to='/newvideo'>
+            {/* <img src={scared} style={sQur}></img> */}
+            <Menu.Item
+              name='New Video'
+              id="liked"
+              active={this.props.location.pathname === '/newvideo'}
+            />
+          </Link>
+          
             <center>
-          <Menu.Item
-           name='Logout'
-            onClick={() => handleLogout(this.props.history)}
-          />
-          </center>
-        </Button>
+              <Menu.Item
+                name='Logout'
+                onClick={() => handleLogout(this.props.history)}
+              />
+            </center>
         </Menu.Menu>
+
       )
     } else {
       return (
         <Menu.Menu position='right'>
-            <Link to='/login'>
-              <Menu.Item
-                id='login'
-                name='login'
-                active={location.pathname === '/login'}
-              />
-            </Link>
+          <Link to='/login'>
+            <Menu.Item
+              id='login'
+              name='login'
+              active={location.pathname === '/login'}
+            />
+          </Link>
           <Link to='/register'>
             <Menu.Item
               id='register'
@@ -93,7 +101,7 @@ const sQur = {
   borderRadius: '50px',
 }
 
-const btn ={
+const btn = {
   height: '50px',
   width: '150px',
   color: 'white',
