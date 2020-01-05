@@ -10,6 +10,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import VideoPlayer from './components/VideoPlayer';
 import { Switch, Route, } from 'react-router-dom';
 import { Container, } from "semantic-ui-react";
+import VideoForm from "./components/VideoForm";
 
 const App = () => (
   <>
@@ -21,6 +22,7 @@ const App = () => (
           <Route exact path="/Liked" component={Liked}/>
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <Route exact path="/newvideo" component={VideoForm} />
           <ProtectedRoute exact path="/videos/:id" component={VideoPlayer} />
           <Route component={NoMatch} />
         </Switch>

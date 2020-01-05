@@ -23,11 +23,13 @@ const Home = (props) => {
       <Grid align="left" columns={2}>
         
         <Grid.Column>
+
         <Image 
         as={Link} to={`/videos/1`}
         style={one}
         src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png'/>
         <h3>{video.title}</h3>
+
         </Grid.Column>
         <Grid.Column>
           <Grid columns={2}>
