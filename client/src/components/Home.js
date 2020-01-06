@@ -1,5 +1,6 @@
 import Axios from 'axios';
 import { Header, Grid, Image, Card} from 'semantic-ui-react';
+import Iframe from 'react-iframe';
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
@@ -70,11 +71,14 @@ const Home = (props) => {
         <Grid columns={4}>
         {videos.map(video => (
           <Grid.Column>
-          
-              <Image 
-              as={Link} to={`/videos/6`}
-              style={four} 
-              src='https://www.globalresearch.ca/wp-content/uploads/2017/07/Trump-Dictator-1024x538.png' />
+          <Iframe url="http://www.youtube.com/embed/WWINlGQxrZM"
+        width="256px"
+        height="144px"
+        id="myId"
+        className="myClassname"
+        display="initial"
+        position="relative"/>
+              
               <h3>{video.title}</h3>
             
           </Grid.Column>
@@ -84,13 +88,6 @@ const Home = (props) => {
       
       <Grid columns={4}>
 
-
-        <Grid>
-        <Grid.Column width={8}>
-          <Grid.Row>
-  </Grid.Row>
-    </Grid.Column>
-    </Grid>
       </Grid>
     </div>
   </>
