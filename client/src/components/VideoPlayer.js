@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link}  from 'react-router-dom';
 import Axios from 'axios';
 import { Header, Container, Segment, Grid, Button, GridColumn, Divider, Card, Image } from 'semantic-ui-react';
 import userImage from '../images/user.png';
@@ -104,14 +105,26 @@ const VideoPlayer = (props) => {
     </Grid.Row>
     <Grid.Row>
     <Grid.Column width={8}>
-    
-    {/* {comments.map(comment => (
-        <Segment>{comment.body}</Segment>
-      ))} */}
+    {comments.map(comment => (
+        <Card>
+        <Card.Content>
+            <Image
+              floated='left'
+              size='mini'
+              src= {userImage}
+            />
+            <Card.Header>{user.nickname}</Card.Header>
+            <Card.Description>
+                {comment.body}
+            </Card.Description>
+          </Card.Content>
+        </Card>
+      ))}
   
     </Grid.Column>
     <Grid.Column  width={4}>
-        <Iframe url="http://www.youtube.com/embed/WWINlGQxrZM"
+        <Iframe url="https://www.youtube.com/embed/1w8Z0UOXVaY"
+        as={Link} to={`/videos/7`}
         width="256px"
         height="144px"
         id="myId"
